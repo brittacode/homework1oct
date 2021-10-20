@@ -13,7 +13,6 @@ nav a {
   text-decoration: none;
   font-size: 15px;
   color: #69696a;
-  display: flex;
   padding: 5px;
 }
 ul {
@@ -32,12 +31,16 @@ ul {
   border-radius: 25px;
   height: 25px;
   padding: 5px;
-  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
 h1 {
   color: #000;
   font-size: 20px;
+}
+h3 {
+  font-size: 10px;
 }
 p {
   border-left: 4px solid gray;
@@ -54,7 +57,8 @@ p {
   border-radius: 25px;
   height: 25px;
   padding: 5px;
-  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
 footer {
@@ -67,12 +71,64 @@ footer {
   background-color: rgba(247, 193, 162, 0.7);
   padding: 5px;
 }
-p {
-  border-radius: 10px;
-}
 
 footer a {
   color: #69696a;
   padding: 10px;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    width: 50%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+  }
+  .call a {
+    width: 50%;
+  }
+  .hire a {
+    float: right;
+    width: auto;
+    display: flex;
+  }
+
+  .dot1 {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50%;
+    left: 75%;
+    display: flex;
+    float: right;
+  }
+  .dot2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 45%;
+    left: 85%;
+    display: flex;
+    float: right;
+  }
+  .dot3 {
+    height: 75px;
+    width: 75px;
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60%;
+    left: 87%;
+    display: flex;
+    float: right;
+  }
 }
